@@ -1,0 +1,25 @@
+@tailwind base;
+*{
+    background-color: black
+}
+@tailwind components;
+p{
+    background-color: transparent
+}
+.img{
+    background: url(/image/choose-img1.png) no-repeat center / cover;
+    position: relative;
+    border: 2px solid #E4E5E73B;
+}
+.img .hover{
+    position: absolute;
+    bottom: 0;
+    background-color: #1B255E;
+    transform: scale(0);
+}
+.img:hover .hover{
+    transform: scale(1);
+    transition: 1s;
+}
+@tailwind utilities;
+
